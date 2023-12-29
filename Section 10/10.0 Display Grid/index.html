@@ -4,6 +4,22 @@
 <head>
   <title>Chessboard</title>
   <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      width: 800px;
+    }
+    .container > * {
+      width: 100px;
+      height: 100px;
+    }
+    .black {
+      background-color: #79a3a2;
+    }
+    .white {
+      background-color: #cfdddd;
+    }
     /* Write your code here */
     /* Each square should be 100px by 100px */
     /* My colours for white: #f0d9b5, black: #b58863 */

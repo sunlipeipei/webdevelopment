@@ -19,11 +19,97 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    .picture {
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+      background-color: black;
+      border: none;
+    }
+    .white {
+      background-color: #F0F1EC;
+    }
+    .red {
+      background-color: #E72F24;
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+    .W1 {
+      grid-column-start: 2;
+      grid-column-end: -1;
+      grid-row-start: 1;
+    }
+    .W2 {
+      grid-area: 2/1/4/2;
+    }
+    .W3 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    .W4 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+    .blue {
+      display: block;
+      border-bottom: solid black 10px;
+      background-color: #004592;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+
+    }
+    .W5 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .yellow {
+      background-color: #F9D01E;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .black {
+      background-color: #232629;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+  <div class="picture">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="gray"></div>
+    <div class="white W1"></div>
+    <div class="white W2"></div>
+    <div class="white W3"></div>
+    <div class="white W4"></div>
+    <div class="white W5"></div>
+    <div class="black"></div>
+  </div>
 </body>
 
 </html>
